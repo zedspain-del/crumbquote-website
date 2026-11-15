@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get early access · CrumbQuote</title>
+  <meta name="description" content="Become a founding baker: early access to CrumbQuote and $6/month locked in for as long as you stay.">
+  <meta property="og:title" content="Become a founding baker · CrumbQuote">
+  <meta property="og:description" content="Early access and $6/month locked in for as long as you stay.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="CrumbQuote home"><img src="favicon.svg" alt="" width="30" height="30"><span>CrumbQuote</span></a>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="index.html#price-check">Price check</a>
+      <a href="about.html">About</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <svg class="icon i-open" aria-hidden="true"><use href="icons.svg#i-menu"/></svg>
+        <svg class="icon i-close" aria-hidden="true"><use href="icons.svg#i-x"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="page-hero" style="text-align:left; padding:0; border-bottom:0">
+  <div class="container ea">
+    <div>
+      <p class="eyebrow">Early access</p>
+      <h1>Become a <span class="serif">founding baker.</span></h1>
+      <p class="lead">Join the first group of bakers on CrumbQuote. It’s free to join and there’s no card needed.</p>
+      <ul class="perks">
+        <li><span class="card-icon brand"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-tag"/></svg></span><div><b>$6/month, locked in</b><span>The founding price stays for as long as you’re subscribed. The regular price will be $9.</span></div></li>
+        <li><span class="card-icon brand"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-sparkle"/></svg></span><div><b>First in line</b><span>Get access before the public launch, in small groups.</span></div></li>
+        <li><span class="card-icon brand"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-users"/></svg></span><div><b>Help getting set up</b><span>We’ll help you set up your menu and prices.</span></div></li>
+        <li><span class="card-icon brand"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-chat"/></svg></span><div><b>Shape the product</b><span>Tell us what you need, and help decide what we build next.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <form class="js-waitlist" id="join-form" name="waitlist" method="POST" data-source="early-access" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <h2>Reserve your spot</h2>
+        <p class="form-intro">Takes about a minute. Only your email is required.</p>
+        <input type="hidden" name="form-name" value="waitlist">
+        <input type="hidden" name="source" value="early-access">
+        <p class="sr-only"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+        <div class="form-grid">
+          <label class="field full">
+            <span class="field-label">Email address</span>
+            <input id="join-email" type="email" name="email" placeholder="you@yourbakery.com" autocomplete="email" required>
+          </label>
+          <label class="field">
+            <span class="field-label">What do you mostly bake?</span>
+            <select name="bakes">
+              <option value="">Choose one</option>
+              <option>Custom cakes</option>
+              <option>Decorated cookies</option>
+              <option>Cupcakes &amp; treats</option>
+              <option>Bread &amp; sourdough</option>
+              <option>A bit of everything</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field-label">Custom orders per month</span>
+            <select name="orders_per_month">
+              <option value="">Choose one</option>
+              <option>1–5</option>
+              <option>6–15</option>
+              <option>16–40</option>
+              <option>More than 40</option>
+            </select>
+          </label>
+          <label class="field full">
+            <span class="field-label">How do you take orders now?</span>
+            <select name="current_method">
+              <option value="">Choose one</option>
+              <option>Instagram or Facebook DMs</option>
+              <option>Texts or phone calls</option>
+              <option>Google Form or Jotform</option>
+              <option>An ordering app</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label class="field full">
+            <span class="field-label">What’s the most annoying part of taking orders? <span class="optional">(optional)</span></span>
+            <textarea name="pain" rows="3" placeholder="e.g. people asking for prices and never ordering"></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Join early access</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+          <p class="fineprint">We’ll only email you about CrumbQuote, and you can unsubscribe anytime. See our <a href="privacy.html">privacy policy</a>.</p>
+        </div>
+      </form>
+
+      <div class="done" id="join-done" hidden tabindex="-1">
+        <span class="done-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg></span>
+        <h2>You’re on the list. Thank you!</h2>
+        <p>We’ll email you when your spot opens up. Know another baker who’s tired of “How much?” messages? Send them this page.</p>
+        <a class="btn btn-secondary" href="index.html">Back to home</a>
+        <p class="preview-note" hidden style="margin-top:18px">Preview mode: nothing was saved. Sign-ups are collected once the site is live on Netlify.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-bottom" style="border-top:0; padding-top:0">
+    <p>© <span class="js-year">2026</span> CrumbQuote. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy</a> · <a href="mailto:you@example.com">Contact</a></p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features · CrumbQuote</title>
+  <meta name="description" content="Order pages, cost-based pricing, card deposits, capacity limits and order management for custom cake and cookie bakers.">
+  <meta property="og:title" content="CrumbQuote features">
+  <meta property="og:description" content="Everything a custom baker needs to take orders: instant prices, deposits, and a calendar that never overbooks.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="announce">
+  <div class="container announce-inner">
+    <p><span class="announce-tag">Early access</span><span class="announce-copy">Founding bakers lock in $6/month for as long as they stay.</span></p>
+    <a href="early-access.html">Claim your spot <svg class="icon" aria-hidden="true"><use href="icons.svg#i-arrow"/></svg></a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="CrumbQuote home"><img src="favicon.svg" alt="" width="30" height="30"><span>CrumbQuote</span></a>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
+      <a href="features.html" aria-current="page">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="index.html#price-check">Price check</a>
+      <a href="about.html">About</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="early-access.html">Get early access</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <svg class="icon i-open" aria-hidden="true"><use href="icons.svg#i-menu"/></svg>
+        <svg class="icon i-close" aria-hidden="true"><use href="icons.svg#i-x"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Features</p>
+      <h1>Everything you need to take <span class="serif">custom orders.</span></h1>
+      <p class="lead">From the first “how much?” to pickup day: an order page that prices itself, deposits that get paid, and a calendar that never overbooks you.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="early-access.html">Get early access</a>
+        <a class="btn btn-secondary btn-lg" href="pricing.html">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav" aria-label="Features">
+    <div class="container subnav-inner">
+      <a href="#order-page">Order page</a>
+      <a href="#pricing-engine">Pricing engine</a>
+      <a href="#payments">Deposits &amp; payments</a>
+      <a href="#capacity">Calendar &amp; capacity</a>
+      <a href="#orders">Order management</a>
+      <a href="#messages">Customer updates</a>
+      <a href="#roadmap">Roadmap</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Order page -->
+      <div class="feature-row" id="order-page">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Order page</p>
+          <h2>A storefront that answers “how much?” for you.</h2>
+          <p class="lead">Your own page with your name, photos and menu. Customers choose what they want and see the price straight away, on any phone.</p>
+          <ul class="feature-list">
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Your logo, photos and colors</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Sizes, flavors, designs and extras, each with a price</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Custom questions, like allergies or the message on the cake</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>One link for your bio, your website and every DM</li>
+          </ul>
+        </div>
+        <div class="feature-visual rose reveal" style="--d:1" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-head"><div><b>Juniper Bakes</b><small>crumbquote.com/juniperbakes</small></div><span class="pill pill-green">Open for orders</span></div>
+            <dl class="mock-rows">
+              <div><dt>Custom celebration cakes</dt><dd>from $55</dd></div>
+              <div><dt>Decorated sugar cookies</dt><dd>from $36 / dozen</dd></div>
+              <div><dt>Cupcake boxes</dt><dd>from $30 / dozen</dd></div>
+              <div><dt>Wedding cakes</dt><dd>Quote on request</dd></div>
+            </dl>
+            <div class="mock-foot"><div><small>Next available pickup</small><b>Saturday</b></div><span class="pill">10 days’ notice</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing engine -->
+      <div class="feature-row reverse" id="pricing-engine">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Pricing engine</p>
+          <h2>Prices built from your real costs.</h2>
+          <p class="lead">Enter what you pay for ingredients, your hourly rate and your packaging. CrumbQuote works out every price with the margin you choose, and keeps it current.</p>
+          <ul class="feature-list">
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Ingredient list with your actual prices</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Labor, packaging and overheads in every price</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Choose your margin and rounding (to the nearest $5, say)</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Costs change once, prices update everywhere</li>
+          </ul>
+        </div>
+        <div class="feature-visual honey reveal" style="--d:1" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-head"><div><b>8″ Chocolate fudge</b><small>Serves 24 · simple design</small></div><span class="pill pill-amber">Cost breakdown</span></div>
+            <dl class="mock-rows">
+              <div><dt>Ingredients</dt><dd>$24.60</dd></div>
+              <div><dt>Box, board &amp; packaging</dt><dd>$4.20</dd></div>
+              <div><dt>Your time (2.5 h × $22)</dt><dd>$55.00</dd></div>
+              <div><dt>Overheads</dt><dd>$6.00</dd></div>
+              <div class="sum"><dt>Total cost</dt><dd>$89.80</dd></div>
+            </dl>
+            <div class="mock-foot"><div><small>Your price at 28% margin</small><b>$115</b></div><span class="pill">$25.20 profit</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payments -->
+      <div class="feature-row" id="payments">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Deposits &amp; payments</p>
+          <h2>Get paid before you start baking.</h2>
+          <p class="lead">Customers pay a deposit by card when they book. The balance is due before pickup, and reminders go out automatically.</p>
+          <ul class="feature-list">
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Set your deposit: a percentage or a fixed amount</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Card payments processed securely by Stripe</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Your cancellation and refund policy shown at checkout</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>No commission from us. Stripe’s standard fee applies</li>
+          </ul>
+        </div>
+        <div class="feature-visual mint reveal" style="--d:1" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-head"><div><b>Order #1042 · Sam R.</b><small>8″ Chocolate fudge, piped florals</small></div><span class="pill pill-green">Paid in full</span></div>
+            <ol class="timeline">
+              <li><span class="tl-icon green"><svg class="icon"><use href="icons.svg#i-check"/></svg></span><div><b>Booked, deposit paid</b><small>Card ending 4242</small></div><span class="amt">$70.00</span></li>
+              <li><span class="tl-icon grey"><svg class="icon"><use href="icons.svg#i-bell"/></svg></span><div><b>Balance reminder sent</b><small>3 days before pickup</small></div><span class="amt"></span></li>
+              <li><span class="tl-icon green"><svg class="icon"><use href="icons.svg#i-check"/></svg></span><div><b>Balance paid</b><small>Saturday, 10:00 AM pickup</small></div><span class="amt">$70.00</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Capacity -->
+      <div class="feature-row reverse" id="capacity">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Calendar &amp; capacity</p>
+          <h2>Never say yes to a fourth cake on a full Saturday.</h2>
+          <p class="lead">Set how much you can bake. CrumbQuote only offers dates with room, and closes them as they fill.</p>
+          <ul class="feature-list">
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Limits per day, per week, or by cake size</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Minimum notice, like 10 days for custom work</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Holidays and days off blocked in one click</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Pickup and delivery time slots</li>
+          </ul>
+        </div>
+        <div class="feature-visual reveal" style="--d:1" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-head"><div><b>December</b><small>Up to 5 cakes a week</small></div><span class="pill pill-blue">Auto-close on</span></div>
+            <div class="cal">
+              <div class="cal-week"><span class="cal-dow">Mon</span><span class="cal-dow">Tue</span><span class="cal-dow">Wed</span><span class="cal-dow">Thu</span><span class="cal-dow">Fri</span><span class="cal-dow">Sat</span><span class="cal-dow">Sun</span></div>
+              <div class="cal-week"><span class="cal-day mute">30</span><span class="cal-day">1</span><span class="cal-day">2</span><span class="cal-day one">3<i></i></span><span class="cal-day one">4<i></i></span><span class="cal-day full">5<i></i></span><span class="cal-day">6<i></i></span></div>
+              <div class="cal-week"><span class="cal-day off">7</span><span class="cal-day">8</span><span class="cal-day one">9<i></i></span><span class="cal-day">10</span><span class="cal-day one">11<i></i></span><span class="cal-day">12<i></i></span><span class="cal-day">13</span></div>
+              <div class="cal-week"><span class="cal-day off">14</span><span class="cal-day">15</span><span class="cal-day">16</span><span class="cal-day one">17<i></i></span><span class="cal-day full">18<i></i></span><span class="cal-day full">19<i></i></span><span class="cal-day one">20<i></i></span></div>
+              <div class="cal-legend"><span class="l-booked">Booked</span><span class="l-full">Full</span><span class="l-off">Day off</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orders -->
+      <div class="feature-row" id="orders">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Order management</p>
+          <h2>Every order in one place, not ten apps.</h2>
+          <p class="lead">Details, inspiration photos, payments and pickup times, organized by date. No more scrolling back through DMs to find what someone asked for.</p>
+          <ul class="feature-list">
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Orders sorted by pickup date, with status at a glance</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Quote requests with photos for one-off designs</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Customer list with past orders and notes</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Works on your phone, right in the kitchen</li>
+          </ul>
+        </div>
+        <div class="feature-visual honey reveal" style="--d:1" aria-hidden="true">
+          <div class="order-card mock">
+            <div class="order-top">
+              <span class="order-icon"><svg class="icon"><use href="icons.svg#i-bell"/></svg></span>
+              <div><b>New order</b><small>Just now · from your order link</small></div>
+            </div>
+            <p class="order-name">Sam R. · Birthday cake</p>
+            <dl class="order-lines">
+              <div><dt>Size</dt><dd>8″ round · serves 24</dd></div>
+              <div><dt>Flavor</dt><dd>Chocolate fudge</dd></div>
+              <div><dt>Design</dt><dd>Piped florals</dd></div>
+              <div><dt>Message</dt><dd>“Happy 30th, Maya!”</dd></div>
+              <div><dt>Allergies</dt><dd>None</dd></div>
+            </dl>
+            <div class="order-total">
+              <div><small>Total</small><b>$140</b></div>
+              <span class="pill pill-green"><svg class="icon"><use href="icons.svg#i-check"/></svg>$70 deposit paid</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="feature-row reverse" id="messages">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Customer updates</p>
+          <h2>The follow-ups happen without you.</h2>
+          <p class="lead">Confirmations, reminders and “ready for pickup” messages go out on time, in your name, so customers always know what’s next.</p>
+          <ul class="feature-list">
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Order confirmation with all the details</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Balance and pickup reminders</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Edit the wording to sound like you</li>
+          </ul>
+        </div>
+        <div class="feature-visual rose reveal" style="--d:1" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-head"><div><b>Automatic messages</b><small>Sent by email in your bakery’s name</small></div></div>
+            <ol class="timeline">
+              <li><span class="tl-icon green"><svg class="icon"><use href="icons.svg#i-check"/></svg></span><div><b>Order confirmed</b><small>Right after booking</small></div><span class="pill pill-green">On</span></li>
+              <li><span class="tl-icon amber"><svg class="icon"><use href="icons.svg#i-card"/></svg></span><div><b>Balance reminder</b><small>3 days before pickup</small></div><span class="pill pill-green">On</span></li>
+              <li><span class="tl-icon amber"><svg class="icon"><use href="icons.svg#i-bell"/></svg></span><div><b>Ready for pickup</b><small>When you mark it done</small></div><span class="pill pill-green">On</span></li>
+              <li><span class="tl-icon grey"><svg class="icon"><use href="icons.svg#i-heart"/></svg></span><div><b>Thank-you note</b><small>The day after pickup</small></div><span class="pill pill-amber">Off</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Details grid -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">The details</p>
+        <h2>Small things that make a big difference.</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-phone"/></svg></span><h3>Made for phones</h3><p>Customers can order from their phone, and you can manage every order from yours, right in the kitchen.</p></article>
+        <article class="card reveal" style="--d:1"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-chat"/></svg></span><h3>Quote on request</h3><p>For one-off designs, customers send photos and details, and you reply with a price they can accept and pay.</p></article>
+        <article class="card reveal" style="--d:2"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-shield"/></svg></span><h3>Your customers stay yours</h3><p>We never market to your customers or show them other bakers. Export your list anytime.</p></article>
+        <article class="card reveal"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-map"/></svg></span><h3>Pickup or delivery</h3><p>Offer pickup windows, local delivery with a fee, or both, and set the area you deliver to.</p></article>
+        <article class="card reveal" style="--d:1"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-sliders"/></svg></span><h3>Flexible menus</h3><p>Price by serving, by the dozen, by the box or by the piece, with add-ons for everything else.</p></article>
+        <article class="card reveal" style="--d:2"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-lock"/></svg></span><h3>Secure by default</h3><p>Card details are handled by Stripe and never touch our servers.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="section" id="roadmap">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Roadmap</p>
+        <h2>What we’re planning next.</h2>
+        <p class="lead">Early access members help decide what comes first.</p>
+      </div>
+      <div class="grid-2 roadmap mid container" style="padding:0">
+        <article class="card reveal"><span class="pill pill-blue">Planned</span><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-inbox"/></svg></span><h3>Shopping lists</h3><p>Turn next week’s orders into one ingredient list, sorted by what you need to buy.</p></article>
+        <article class="card reveal" style="--d:1"><span class="pill pill-blue">Planned</span><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-tag"/></svg></span><h3>Printable labels</h3><p>Ingredient and allergen labels for every order, ready to print.</p></article>
+        <article class="card reveal"><span class="pill pill-blue">Planned</span><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-calc"/></svg></span><h3>Reports for tax time</h3><p>Income, costs and profit by month, in a format your accountant will like.</p></article>
+        <article class="card reveal" style="--d:1"><span class="pill pill-blue">Planned</span><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-store"/></svg></span><h3>Market-day preorders</h3><p>Let regulars reserve bakes for your next market or pop-up.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Ready to stop quoting by hand?</h2>
+        <p class="lead">Join early access and lock in the founding price of $6/month.</p>
+        <form class="capture js-waitlist" data-source="features" method="POST" action="/" novalidate>
+          <input type="hidden" name="form-name" value="waitlist">
+          <input type="hidden" name="source" value="features">
+          <p class="sr-only"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <label class="sr-only" for="cta-email">Email address</label>
+          <input id="cta-email" type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+          <button class="btn btn-primary" type="submit">Get early access</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+        <p class="fineprint">No card needed. We’ll only email you about CrumbQuote.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="index.html" aria-label="CrumbQuote home"><img src="favicon.svg" alt="" width="30" height="30"><span>CrumbQuote</span></a>
+      <p>The order page that prices your cakes for you. Made for home and cottage bakers.</p>
+      <a class="btn btn-secondary btn-sm" href="early-access.html">Get early access</a>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <p class="footer-heading">Product</p>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="index.html#price-check">Free price check</a>
+        <a href="early-access.html">Early access</a>
+      </div>
+      <div>
+        <p class="footer-heading">Company</p>
+        <a href="about.html">About</a>
+        <a href="mailto:you@example.com">Contact</a>
+      </div>
+      <div>
+        <p class="footer-heading">Legal</p>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span class="js-year">2026</span> CrumbQuote. All rights reserved.</p>
+    <p>Made for home and cottage bakers.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing · CrumbQuote</title>
+  <meta name="description" content="One flat plan with everything included and no commission on your orders. Founding bakers lock in $6/month.">
+  <meta property="og:title" content="CrumbQuote pricing">
+  <meta property="og:description" content="$9/month, everything included, no commission. Founding bakers lock in $6/month.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="announce">
+  <div class="container announce-inner">
+    <p><span class="announce-tag">Early access</span><span class="announce-copy">Founding bakers lock in $6/month for as long as they stay.</span></p>
+    <a href="early-access.html">Claim your spot <svg class="icon" aria-hidden="true"><use href="icons.svg#i-arrow"/></svg></a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="CrumbQuote home"><img src="favicon.svg" alt="" width="30" height="30"><span>CrumbQuote</span></a>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
+      <a href="features.html">Features</a>
+      <a href="pricing.html" aria-current="page">Pricing</a>
+      <a href="index.html#price-check">Price check</a>
+      <a href="about.html">About</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="early-access.html">Get early access</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <svg class="icon i-open" aria-hidden="true"><use href="icons.svg#i-menu"/></svg>
+        <svg class="icon i-close" aria-hidden="true"><use href="icons.svg#i-x"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" style="border-bottom:0; padding-bottom:40px">
+    <div class="container">
+      <p class="eyebrow">Pricing</p>
+      <h1>Simple pricing. <span class="serif">No commission.</span></h1>
+      <p class="lead">One plan with everything included. Founding bakers lock in a lower price for as long as they stay.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <div class="toggle-wrap">
+        <div class="billing-toggle" role="group" aria-label="Billing period">
+          <button type="button" class="active" data-billing="monthly" aria-pressed="true">Monthly</button>
+          <button type="button" data-billing="yearly" aria-pressed="false">Yearly <span class="save">2 months free</span></button>
+        </div>
+      </div>
+
+      <div class="plans">
+        <div class="plan featured reveal">
+          <span class="plan-badge">Early access only</span>
+          <h3>Founding baker</h3>
+          <p class="plan-desc">For bakers who join before launch. Your price is locked in for as long as you stay subscribed.</p>
+          <p class="plan-price"><span class="amount">$6</span><span class="per">/month</span></p>
+          <p class="plan-note">Billed monthly · 14-day free trial</p>
+          <a class="btn btn-primary btn-block" href="early-access.html">Claim the founding price</a>
+          <ul class="plan-list">
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Everything in CrumbQuote</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Early access before public launch</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Help setting up your menu and prices</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>A direct line to the team</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>A say in what we build next</li>
+          </ul>
+        </div>
+
+        <div class="plan reveal" style="--d:1">
+          <h3>CrumbQuote</h3>
+          <p class="plan-desc">Everything a home or cottage baker needs to take custom orders.</p>
+          <p class="plan-price"><span class="amount" id="plan-amount">$9</span><span class="per" id="plan-per">/month</span></p>
+          <p class="plan-note" id="plan-alt">Billed monthly · 14-day free trial</p>
+          <a class="btn btn-secondary btn-block" href="early-access.html">Join the waitlist</a>
+          <ul class="plan-list">
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Your own order page and link</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Unlimited orders and customers</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Cost-based pricing engine</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Card deposits and balance reminders</li>
+            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Calendar with capacity limits</li>
+          </ul>
+        </div>
+      </div>
+      <p class="hero-caption">Prices in US dollars. Card payments are processed by Stripe at its standard rate.</p>
+    </div>
+  </section>
+
+  <!-- Everything included -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Every plan</p>
+        <h2>Everything included. No add-ons.</h2>
+      </div>
+      <ul class="includes reveal">
+        <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg><div><b>Order page</b><span>Your name, photos and menu, on one link.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg><div><b>Instant prices</b><span>Customers see the total as they choose.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg><div><b>Pricing engine</b><span>Prices from your real costs and margin.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg><div><b>Card deposits</b><span>Paid at booking, through Stripe.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg><div><b>Capacity limits</b><span>Full dates close automatically.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg><div><b>Quote requests</b><span>For designs that need a custom price.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg><div><b>Order dashboard</b><span>Every order, payment and pickup.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg><div><b>Automatic messages</b><span>Confirmations and reminders.</span></div></li>
+        <li><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg><div><b>Your data</b><span>Export orders and customers anytime.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Flat vs commission -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Why a flat price</p>
+        <h2>Your busiest month shouldn’t cost you more.</h2>
+        <p class="lead">Per-order commissions grow with every cake you sell. A flat price doesn’t.</p>
+      </div>
+      <div class="cost-compare reveal">
+        <div class="cost-box">
+          <p class="label">A 5% commission</p>
+          <p class="big">$80<span style="font-size:1rem; color:var(--muted); letter-spacing:0"> /month</span></p>
+          <p class="small">On 20 orders a month at $80 each. It goes up every time you get busier.</p>
+        </div>
+        <div class="cost-box win">
+          <p class="label">CrumbQuote</p>
+          <p class="big">$9<span style="font-size:1rem; color:var(--muted); letter-spacing:0"> /month</span></p>
+          <p class="small">The same on 2 orders or 200. Founding bakers pay $6.</p>
+        </div>
+      </div>
+      <p class="hero-caption">Example for illustration. Card processing fees from Stripe apply in both cases.</p>
+    </div>
+  </section>
+
+  <!-- Compared with DMs -->
+  <section class="section section-soft">
+    <div class="container mid">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Compared with DMs</p>
+        <h2>DMs and Google Forms collect requests. CrumbQuote books orders.</h2>
+      </div>
+      <div class="table-wrap reveal">
+        <table class="compare">
+          <thead>
+            <tr><th scope="col"><span class="sr-only">Feature</span></th><th scope="col">DMs &amp; Google Forms</th><th scope="col">CrumbQuote</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Customer sees a price before messaging you</th><td class="no">No</td><td class="yes"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Yes</td></tr>
+            <tr><th scope="row">Prices based on your actual costs</th><td class="no">Your own math</td><td class="yes"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Yes</td></tr>
+            <tr><th scope="row">Deposit taken when they book</th><td class="no">By hand, if at all</td><td class="yes"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Automatic</td></tr>
+            <tr><th scope="row">Stops bookings when you’re full</th><td class="no">No</td><td class="yes"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Yes</td></tr>
+            <tr><th scope="row">Reminders before pickup</th><td class="no">You send them</td><td class="yes"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Automatic</td></tr>
+            <tr><th scope="row">All orders in one place</th><td class="no">No</td><td class="yes"><svg class="icon" aria-hidden="true"><use href="icons.svg#i-check"/></svg>Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing FAQ -->
+  <section class="section">
+    <div class="container faq-grid">
+      <div class="section-head reveal">
+        <p class="eyebrow">Pricing FAQ</p>
+        <h2>The fine print, in plain English.</h2>
+        <p class="lead">Still unsure? <a href="mailto:you@example.com">Email us</a>.</p>
+      </div>
+      <div class="faq reveal" style="--d:1">
+        <details>
+          <summary>Is there a free trial?</summary>
+          <p>Yes. Every account starts with a 14-day free trial when we launch. You won’t be charged until it ends, and you can cancel before then.</p>
+        </details>
+        <details>
+          <summary>Do I need a card to join early access?</summary>
+          <p>No. Joining early access only needs your email address.</p>
+        </details>
+        <details>
+          <summary>What fees will I pay on card payments?</summary>
+          <p>CrumbQuote takes no commission. Card payments are processed by Stripe, which charges its standard processing fee per payment. Check Stripe’s pricing page for the rate in your country.</p>
+        </details>
+        <details>
+          <summary>How long does the founding price last?</summary>
+          <p>For as long as you stay subscribed. If you cancel and come back later, the regular price applies.</p>
+        </details>
+        <details>
+          <summary>Is there a yearly option?</summary>
+          <p>Yes. The yearly plan is $90, which works out to two months free.</p>
+        </details>
+        <details>
+          <summary>Can I cancel anytime?</summary>
+          <p>Yes. There are no contracts. Cancel from your settings and you won’t be charged again.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Lock in <span class="serif">$6/month</span> while you can.</h2>
+        <p class="lead">The founding price is only for bakers who join before launch.</p>
+        <form class="capture js-waitlist" data-source="pricing" method="POST" action="/" novalidate>
+          <input type="hidden" name="form-name" value="waitlist">
+          <input type="hidden" name="source" value="pricing">
+          <p class="sr-only"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <label class="sr-only" for="cta-email">Email address</label>
+          <input id="cta-email" type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+          <button class="btn btn-primary" type="submit">Get early access</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+        <p class="fineprint">No card needed. We’ll only email you about CrumbQuote.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="index.html" aria-label="CrumbQuote home"><img src="favicon.svg" alt="" width="30" height="30"><span>CrumbQuote</span></a>
+      <p>The order page that prices your cakes for you. Made for home and cottage bakers.</p>
+      <a class="btn btn-secondary btn-sm" href="early-access.html">Get early access</a>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <p class="footer-heading">Product</p>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="index.html#price-check">Free price check</a>
+        <a href="early-access.html">Early access</a>
+      </div>
+      <div>
+        <p class="footer-heading">Company</p>
+        <a href="about.html">About</a>
+        <a href="mailto:you@example.com">Contact</a>
+      </div>
+      <div>
+        <p class="footer-heading">Legal</p>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span class="js-year">2026</span> CrumbQuote. All rights reserved.</p>
+    <p>Made for home and cottage bakers.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
